@@ -10,8 +10,6 @@ import { LinearFlowchartComponent } from './linear-flowchart.component';
     LinearFlowchartComponent
   ],
   imports: [
-    BrowserModule,
-    CommonModule,
   ],
   exports: [
     LinearFlowchartComponent
