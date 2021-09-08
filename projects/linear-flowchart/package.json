@@ -1,0 +1,28 @@
+{
+  "name": "linear-flowchart",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^12.1.0",
+    "@angular/core": "^12.1.0"
+  },
+  "description": "A SVG based flowchart for Angular.",
+  "keywords": [
+    "flowchart",
+    "svg",
+    "linear",
+    "path"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Harsha-Vardhan-Sai-Ram/linear-flowchart.git"
+  },
+  "author": {
+    "name":"Harsha Vardhan",
+    "email": "shvsairam@gmail.com"
+  },
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "tslib": "^2.2.0"
+  }
+}
