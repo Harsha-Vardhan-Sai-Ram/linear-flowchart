@@ -2,23 +2,32 @@
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.0.
 
-## Code scaffolding
+# Properties
+## cellsOnFirstLine:
+    To define the number of cells to be shown on the first row in flowchart. 
+    **Type :** number
+    **Example :** [cellsOnFirstLine]="4"
 
-Run `ng generate component component-name --project Linear-flowchart` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project Linear-flowchart`.
-> Note: Don't forget to add `--project Linear-flowchart` or else it will be added to the default project in your `angular.json` file. 
+## FontFamily:
+    To define the Font family of the text.
+    **Type :** String
+    **Example :** [FontFamily]="'sans-serif'"
 
-## Build
+## CellColor:
+    to define color of the cells.
+    **Type :** String
+    **Example :** [CellColor]="'green'"
 
-Run `ng build Linear-flowchart` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Data:
+    To put your desired text in cells, send the data in array form.
+    **Type :** Array
 
-## Publishing
+## svgWindowHeight:
+    To define the SVG height. Default set to 400px
+    **Type :** Number
+    **Example :** [svgWindowHeight]="400"
 
-After building your library with `ng build Linear-flowchart`, go to the dist folder `cd dist/linear-flowchart` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test Linear-flowchart` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## RouteData:
+    To Route on click on cells, send the data in array form.
+    Note: length of Data array and RouteData array must be equal
+    **Type :** Array

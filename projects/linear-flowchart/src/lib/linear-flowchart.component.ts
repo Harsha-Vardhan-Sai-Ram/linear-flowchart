@@ -168,7 +168,9 @@ export class LinearFlowchartComponent implements OnInit {
 
   //Routing
   RouteTo(i: any){
-    this.route.navigateByUrl(`/${this.RouteData[i]}`)
+    if(this.RouteData.length == this.Data.length){
+      this.route.navigateByUrl(`/${this.RouteData[i]}`)
+    }
   } 
 
 }
