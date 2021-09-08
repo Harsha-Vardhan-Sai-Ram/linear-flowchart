@@ -2,7 +2,7 @@ import { ChangeDetectorRef, Component, Input, OnInit, ViewChild } from '@angular
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'lib-Linear-flowchart',
+  selector: 'Linear-flowchart',
   template: `
   <style>
     .svg {
