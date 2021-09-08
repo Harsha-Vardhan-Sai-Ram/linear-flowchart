@@ -5,7 +5,7 @@ This library was generated with [Angular CLI](https://github.com/angular/angular
 # Properties
 ## cellsOnFirstLine:
     To define the number of cells to be shown on the first row in flowchart. 
-    **Type :** number
+    **Type** : number
     **Example :** [cellsOnFirstLine]="4"
 
 ## FontFamily:
