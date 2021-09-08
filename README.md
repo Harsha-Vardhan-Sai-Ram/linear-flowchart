@@ -14,7 +14,7 @@ This library was generated with [Angular CLI](https://github.com/angular/angular
     Example : [FontFamily]="'sans-serif'"
 
 ## CellColor:
-    to define color of the cells.
+    To define color of the cells.
     Type : String
     Example : [CellColor]="'green'"
 
