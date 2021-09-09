@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { LinearFlowchartComponent } from './linear-flowchart.component';
 
@@ -8,6 +9,7 @@ import { LinearFlowchartComponent } from './linear-flowchart.component';
     LinearFlowchartComponent
   ],
   imports: [
+    CommonModule
   ],
   exports: [
     LinearFlowchartComponent

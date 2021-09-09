@@ -1,6 +1,6 @@
 {
   "name": "linear-flowchart",
-  "version": "0.0.4",
+  "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^12.1.0",
     "@angular/core": "^12.1.0"
@@ -18,7 +18,8 @@
   },
   "author": {
     "name":"Harsha Vardhan",
-    "email": "shvsairam@gmail.com"
+    "email": "shvsairam@gmail.com",
+    "url": "https://www.linkedin.com/in/harsha-vardhan-sai-ram-4b23311b1/"
   },
   "license": "MIT",
   "private": false,
