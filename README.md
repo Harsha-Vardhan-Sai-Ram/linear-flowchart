@@ -1,4 +1,4 @@
-![banner](./IMG/linear-flowchart pic.jpg)
+![banner](./IMG/linear-flowchart_pic.jpg)
 
 # LinearFlowchart
 
