@@ -12,24 +12,7 @@ This library was generated with [Angular CLI](https://github.com/angular/angular
 | -------- | ---- | ------- | ------------- |
 | __cellsOnFirstLine__ | Number | To define the number of cells to be shown on the first row in flowchart. | [cellsOnFirstLine]="4" |
 | __FontFamily__ | String | To define the Font family of the text. | [FontFamily]="'sans-serif'" |
-
-
-
-## CellColor:
-    To define color of the cells.
-    Type : String
-    Example : [CellColor]="'green'"
-
-## Data:
-    To put your desired text in cells, send the data in array form.
-    Type : Array
-
-## svgWindowHeight:
-    To define the SVG height. Default set to 400px
-    Type : Number
-    Example : [svgWindowHeight]="400"
-
-## RouteData:
-    To Route on click on cells, send the data in array form.
-    Note: length of Data array and RouteData array must be equal
-    Type : Array
+| __CellColor__ | String | To define color of the cells. | [CellColor]="'green'" |
+| __Data__ | Array | To put your desired text in cells, send the data in array form. | [Data]="[1,2,3,4]" |
+| __svgWindowHeight__ | Number | To define the SVG height. Default set to 400px. | [svgWindowHeight]="400" |
+| __RouteData__ | Array | To Route on click on cells, send the data in array form. <br />Note: length of Data array and RouteData array must be equal. Uses navigateByUrl() | [RouteData]="['/home','/settings']" |
