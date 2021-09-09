@@ -1,22 +1,19 @@
-![banner](./IMG/linear-flowchart_pic.jpg)
 
 # LinearFlowchart
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.0.
 
-
+![banner](./IMG/linear-flowchart_pic.jpg)
 
 
 # Properties
-## cellsOnFirstLine:
-    To define the number of cells to be shown on the first row in flowchart. 
-    Type : number
-    Example : [cellsOnFirstLine]="4"
 
-## FontFamily:
-    To define the Font family of the text.
-    Type : String
-    Example : [FontFamily]="'sans-serif'"
+| Property | Type | Details | Usage Example |
+| -------- | ---- | ------- | ------------- |
+| __cellsOnFirstLine__ | Number | To define the number of cells to be shown on the first row in flowchart. | [cellsOnFirstLine]="4" |
+| __FontFamily__ | String | To define the Font family of the text. | [FontFamily]="'sans-serif'" |
+
+
 
 ## CellColor:
     To define color of the cells.
