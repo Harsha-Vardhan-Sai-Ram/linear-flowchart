@@ -4,8 +4,20 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'Linear-flowchart',
   template: `
-  <style>
-    .svg {
+  <svg #Svg class="svg-responsive svg" attr.height="{{svgWindowHeight}}" width="100%" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <g transform=translate(10,10) style="border:1px solid red;">
+        <g *ngFor="let pat of patterns; let i = index" (click)="RouteTo(i)">
+            <rect class="rect" attr.x="{{pat.Rect[0]}}" attr.y="{{pat.Rect[1]}}" rx="20" attr.width="{{pat.Rect[2]}}" height="40"  [style.fill]="CellColor"/>
+            <text class="text" attr.x="{{pat.Rect[0] + pat.Rect[2]/2}}" attr.y="{{pat.Rect[1] + 20 }}" [style.font-size.px]="patternFontSize()[0]" [style.font-weight]="patternFontSize()[1]" [style.font-family]="FontFamily" dominant-baseline="middle" text-anchor="middle">{{ Data[i] }}</text>
+            <line class="line" *ngIf="(pat.Line?.length > 1) && (i < patterns.length - 1)" attr.x1="{{pat.Line[0]}}" attr.y1="{{pat.Line[1]}}" attr.x2="{{pat.Line[2]}}" attr.y2="{{pat.Line[3]}}" />
+            <path class="path" *ngIf="pat.Line?.length == 1 && (i < patterns.length - 1)" attr.d="{{pat.Line[0]}}" stroke="black" stroke-linecap="miter" stroke-width="2" fill="none"/>  
+            <polygon class="polygon" *ngIf="(i < patterns.length - 1)" attr.points="{{pat.Poly[0]}} {{pat.Poly[1]}} {{pat.Poly[2]}} {{pat.Poly[3]}} {{pat.Poly[4]}} {{pat.Poly[5]}} {{pat.Poly[6]}} {{pat.Poly[7]}} {{pat.Poly[8]}} {{pat.Poly[9]}}" />
+        </g>
+    </g>
+  </svg>
+  `,
+  styles: [
+    `.svg {
       font-family: sans-serif;
       border: solid;
       .polygon {
@@ -26,22 +38,7 @@ import { Router } from '@angular/router';
           stroke:rgb(0,0,0);
           stroke-width:2;
       }
-    }
-  </style>
-
-  <svg #Svg class="svg-responsive svg" attr.height="{{svgWindowHeight}}" width="100%" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-    <g transform=translate(10,10) style="border:1px solid red;">
-        <g *ngFor="let pat of patterns; let i = index" (click)="RouteTo(i)">
-            <rect class="rect" attr.x="{{pat.Rect[0]}}" attr.y="{{pat.Rect[1]}}" rx="20" attr.width="{{pat.Rect[2]}}" height="40"  [style.fill]="CellColor"/>
-            <text class="text" attr.x="{{pat.Rect[0] + pat.Rect[2]/2}}" attr.y="{{pat.Rect[1] + 20 }}" [style.font-size.px]="patternFontSize()[0]" [style.font-weight]="patternFontSize()[1]" [style.font-family]="FontFamily" dominant-baseline="middle" text-anchor="middle">{{ Data[i] }}</text>
-            <line class="line" *ngIf="(pat.Line?.length > 1) && (i < patterns.length - 1)" attr.x1="{{pat.Line[0]}}" attr.y1="{{pat.Line[1]}}" attr.x2="{{pat.Line[2]}}" attr.y2="{{pat.Line[3]}}" />
-            <path class="path" *ngIf="pat.Line?.length == 1 && (i < patterns.length - 1)" attr.d="{{pat.Line[0]}}" stroke="black" stroke-linecap="miter" stroke-width="2" fill="none"/>  
-            <polygon class="polygon" *ngIf="(i < patterns.length - 1)" attr.points="{{pat.Poly[0]}} {{pat.Poly[1]}} {{pat.Poly[2]}} {{pat.Poly[3]}} {{pat.Poly[4]}} {{pat.Poly[5]}} {{pat.Poly[6]}} {{pat.Poly[7]}} {{pat.Poly[8]}} {{pat.Poly[9]}}" />
-        </g>
-    </g>
-  </svg>
-  `,
-  styles: [
+    }`
   ]
 })
 export class LinearFlowchartComponent implements OnInit {
