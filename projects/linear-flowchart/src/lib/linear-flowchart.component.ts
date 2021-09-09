@@ -17,29 +17,6 @@ import { Router } from '@angular/router';
   </svg>
   `,
   styles: [
-    // `.svg {
-    //   font-family: sans-serif;
-    //   border: solid;
-    //   .polygon {
-    //       stroke: #000;
-    //       stroke-miterlimit: 10;
-    //       stroke-width: 2px;
-    //   }
-    //   .rect{
-    //       fill:rgb(37, 173, 133);
-    //       stroke:#000000;
-    //       stroke-width:2;
-    //       opacity:1;
-    //   }
-    //   .text{
-    //                 fill: white;
-
-    //   }
-    //   .line{
-    //       stroke:rgb(0,0,0);
-    //       stroke-width:2;
-    //   }
-    // }`
   ],
 })
 export class LinearFlowchartComponent implements OnInit {
