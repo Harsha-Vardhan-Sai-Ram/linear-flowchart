@@ -46,7 +46,7 @@ export class LinearFlowchartComponent implements OnInit {
   @Input('cellsOnFirstLine') cellsOnFirstLine: number = 7;
   @Input('FontFamily') FontFamily = 'sans-serif'
   @Input('CellColor') CellColor = 'rgb(37, 173, 133)'
-  @Input('Data') Data :any[] = [1,2,2,3]
+  @Input('Data') Data :any[] = [1,2,3,4,5,6,7,8,9]
   @Input('svgWindowHeight') svgWindowHeight = 400
   @Input('RouteData') RouteData: any[] = []
   svgCoordinates: any;
